@@ -1,0 +1,12 @@
+[project]
+name = "agentic-retrieval-bench"
+version = "0.1.0"
+description = "A benchmark for agentic passage retrieval"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "openai == 2.15.0",
+    "zai-sdk == 0.2.0",
+    "pymongo == 4.15.5",
+    "jieba == 0.42.1",
+]

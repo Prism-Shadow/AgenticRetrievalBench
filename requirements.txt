@@ -1,0 +1,4 @@
+openai==2.15.0
+zai-sdk==0.2.0
+pymongo==4.15.5
+jieba==0.42.1
