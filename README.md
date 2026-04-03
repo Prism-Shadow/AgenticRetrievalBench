@@ -62,7 +62,7 @@ Use the script `dataset_download.py` to pull our datasets from Hugging Face, or 
 python ./src/dataset_download.py
 ```
 
-Hugging Face link: `https://huggingface.co/datasets/PrismShadow/AgenticSearch`
+Hugging Face link: https://huggingface.co/datasets/PrismShadow/AgenticRetrievalBench
 
 From each of the three Multi-CPR scenarios we sample roughly 4,000 queries and about 10,000 passages, using the provided indices as ground truth.
 
