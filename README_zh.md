@@ -70,7 +70,7 @@ pip install -r requirements.txt
 python ./src/dataset_download.py
 ```
 
-数据集的 Hugging Face 链接：[PrismShadow/AgenticSearch](https://huggingface.co/datasets/PrismShadow/AgenticSearch)
+数据集的 Hugging Face 链接：https://huggingface.co/datasets/PrismShadow/AgenticRetrievalBench
 
 我们从 Multi-CPR 数据集的 3 个场景中分别抽取约 4000 条查询和约 10000 条文档，并使用给定索引作为真值标签。
 

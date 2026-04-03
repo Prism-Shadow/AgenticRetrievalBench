@@ -62,7 +62,7 @@ Use the script `dataset_download.py` to pull our datasets from Hugging Face, or 
 python ./src/dataset_download.py
 ```
 
-Hugging Face link: `https://huggingface.co/datasets/PrismShadow/AgenticSearch`
+Hugging Face link: https://huggingface.co/datasets/PrismShadow/AgenticRetrievalBench
 
 From each of the three Multi-CPR scenarios we sample roughly 4,000 queries and about 10,000 passages, using the provided indices as ground truth.
 
@@ -302,7 +302,7 @@ REWRITE_QUERY_SYSTEM_PROMPT = (
     - The final output must not include labels like "original text" or "rewritten question".
 
     # Output format (single-line plain text)
-    <Chain of Thought> keyword extraction (core keyword; supplemental keywords) 2 question generation 3 answer generation <Final Output: question: rewritten question; supplemental question A; supplemental question B answer: answer to rewritten question + additional info>
+    <Chain of Thought> keyword extraction (core keyword; supplemental keywords) 2 question generation 3 answer generation <Final Output> question: rewritten question; supplemental question A; supplemental question B answer: answer to rewritten question + additional info
     '''
 )
 
@@ -335,7 +335,7 @@ REWRITE_PASSAGE_SYSTEM_PROMPT = (
     - The final output must not include labels like "original text" or "rewritten question".
 
     # Output format (single-line plain text)
-    <Chain of Thought> 1 text analysis (text type/function + author intent) 2 keyword extraction (core keyword; supplemental keywords) 3 question generation 4 answer generation <Final Output: question: rewritten question; supplemental question A; supplemental question B answer: original text answering the rewritten question + extended info>
+    <Chain of Thought> 1 text analysis (text type/function + author intent) 2 keyword extraction (core keyword; supplemental keywords) 3 question generation 4 answer generation <Final Output> question: rewritten question; supplemental question A; supplemental question B answer: original text + answer to the rewritten question + extended supplemental info
     '''
 )
 ```
